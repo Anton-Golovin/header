@@ -7,11 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-<header>
-
+<header class="header">
+    <div class="header__container">
+        <figure class="logo">
+            <img src="./img/logo.png" alt="Логотип компании 'Единый Центр Записи'" class="logo__image">
+            <figcaption class="logo__text">Единый <br>Центр Записи</figcaption>
+        </figure>
+        <div class="header__right">
+            <a href="tel:803005000" class="header__phone">
+                <img src="img/phone-icon.png" alt="Трубка телефона" class="header__phone_icon">
+                <span class="header__phone_number">80300 5000</span>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a class="header__menu_item header__menu_item--active" href="#">Главная</a></li>
+                    <li><a class="header__menu_item header__menu_item--arrow" href="#">Услуги</a>
+                        <ul class="header__sub_menu">
+                            <li>МРТ</li>
+                            <li>КТ</li>
+                            <li>УЗИ</li>
+                        </ul>
+                    </li>
+                    <li><a class="header__menu_item" href="#">Клиники и кабинеты</a></li>
+                    <li><a class="header__menu_item" href="#">О нас</a></li>
+                    <li><a class="header__menu_item" href="#">Статьи</a></li>
+                    <li><a class="header__menu_item" href="#">FAQ</a></li>
+                    <li><a class="header__menu_item" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </header>
 </body>
 </html>
