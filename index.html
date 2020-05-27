@@ -13,7 +13,7 @@
 </head>
 <body>
 <header class="header">
-    <div class="header__container">
+    <div class="header__container container">
         <figure class="logo">
             <img src="./img/logo.png" alt="Логотип компании 'Единый Центр Записи'" class="logo__image">
             <figcaption class="logo__text">Единый <br>Центр Записи</figcaption>
@@ -43,5 +43,46 @@
         </div>
     </div>
 </header>
+<main>
+    <div class="clinic_list container">
+        <section class="clinic_card" itemscope itemtype="http://schema.org/Organization">
+            <div class="clinic_card__head">
+                <img src="./img/best_doctor.png" alt="" name="logo" class="clinic_card__logo">
+                <div class="clinic_card__info">
+                    <h5 itemprop="name">Название клиники</h5>
+                    <p itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">Ленинский проспект, д. 161, Ленинский проспект</span>
+                        <meta itemprop="postalCode" name="F-75002">
+                        <meta itemprop="addressLocality" name="Paris, France">
+                    </p>
+                </div>
+            </div>
+            <p class="clinic_card__desc" itemprop="description">Что такое текст «рыба» знают все, кто работает с версткой журналов,
+                дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+                как контент впоследствии будет выглядеть на готовой странице, чтобы
+                увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</p>
+            <div class="clinic_card__footer">
+                <span class="clinic_card__phone">Наш номер: <a itemprop="telephone" href="tel:+38560996665">+3856 0 99 66 65</a></span>
+                <button class="clinic_card__button">Заказать звонок</button>
+            </div>
+        </section>
+    </div>
+</main>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Paris, France",
+            "postalCode": "F-75002",
+            "streetAddress": "Ленинский проспект, д. 160, Ленинский проспект"
+        },
+        "logo": "./img/best_doctor.png",
+        "description": "Что такое текст «рыба» знают все, кто работает с версткой журналов, дизайном и разработкой сайтов. Этот текст служит для демонстрации того, как контент впоследствии будет выглядеть на готовой странице, чтобы увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...",
+        "telephone": "+38560996665",
+        "url": "https://www.facebook.com/"
+    }
+</script>
 </body>
 </html>
