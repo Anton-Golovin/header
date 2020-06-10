@@ -1,0 +1,8 @@
+.clinic_card {
+  max-width: 690px;
+  border: 3px solid $primary-color;
+  padding: 20px;
+  &__head {
+    display: flex;
+  }
+}

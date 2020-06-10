@@ -5,14 +5,14 @@ var pipeline = require('readable-stream').pipeline;
 
 gulp.task('js', function () {
     return pipeline(
-        gulp.src('src/js/app.js'),
-        uglify(),
+        gulp.src('src/main.js'),
+        // uglify(),
         gulp.dest('dist/js')
     );
 });
 
 gulp.task('scss', function () {
-    return gulp.src('src/scss/main.scss')
+    return gulp.src('src/main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./dist/css'));
 });
