@@ -4,6 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run gulp && npm run webpack",
+    "gulp": "gulp",
+    "watch": "gulp watch",
+    "webpack": "webpack",
+    "webpack:w": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +25,13 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
+    "html-webpack-plugin": "^4.3.0",
+    "normalize.css": "^8.0.1",
     "react": "^16.13.1",
-    "readable-stream": "^3.6.0"
+    "readable-stream": "^3.6.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0"
   }
 }

@@ -1,1 +1,2 @@
-import "./logo/logo";
+import { logo } from "./logo/logo";
+logo();

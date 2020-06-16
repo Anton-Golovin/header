@@ -1,3 +1,3 @@
-function logo() {
+export function logo() {
     console.log('logo')
 }
